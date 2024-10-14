@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 
 public class Producer implements Runnable {
 
-    BoundedBuffer<Integer> boundedBuffer;
+    private final BoundedBuffer<Integer> boundedBuffer;
 
     private final CountDownLatch startSignal;
     private final CountDownLatch finishSignal;
